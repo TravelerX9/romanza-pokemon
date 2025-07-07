@@ -18,7 +18,7 @@ const Navbar = () => {
       className={`mx-auto flex w-full items-center justify-center p-2 transition-colors duration-300 ${
         scrolled ? 'bg-white' : 'bg-transparent'
       }`}
-      style={{ position: 'fixedy', top: 0, zIndex: 50 }}
+      style={{ position: 'fixed', top: 0, zIndex: 50 }}
     >
       <header>
         <div className='z-10 flex items-center gap-2'>

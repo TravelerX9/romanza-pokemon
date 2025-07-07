@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PokemonCard from './card-pokemon';
 import { usePokemonList } from '../../lib/hooks/usePokemonList';
 import { useRouter } from 'next/navigation';
-import ButtonAnimation from '../animation/load-animation';
+import ButtonAnimation from '../animation/load-anima';
 
 interface ListPokemonProps {
   keyword: string;

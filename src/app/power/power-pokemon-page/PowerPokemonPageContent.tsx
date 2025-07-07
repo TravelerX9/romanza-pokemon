@@ -73,7 +73,7 @@ export function PowerPokemonPageContent({ id }: PowerPokemonPageContentProps) {
 
   // TOMBOL KEMBALI
   return (
-    <div className='relative mx-auto flex h-[1900px] w-[350px] flex-col rounded-3xl bg-white px-6 py-1 shadow md:h-[1600px] md:w-[1440px]'>
+    <div className='relative mx-auto flex h-[1900px] w-[350px] flex-col rounded-3xl bg-white px-6 py-1 md:h-[1600px] md:w-[1440px]'>
       <NavbarSearch />
       <button
         onClick={() => window.history.back()}

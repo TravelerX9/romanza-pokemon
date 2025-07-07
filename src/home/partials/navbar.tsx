@@ -21,7 +21,7 @@ const Navbar = () => {
       style={{ position: 'sticky', top: 0, zIndex: 50 }}
     >
       <header>
-        <div className='z-10 flex items-center gap-2 pt-2'>
+        <div className='z-10 flex items-center gap-2'>
           {/* Pokeball PNG */}
           <img
             src='/images/pokemon-logo.png'

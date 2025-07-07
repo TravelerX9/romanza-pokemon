@@ -188,6 +188,9 @@
 body,
 html {
   background: #454545 !important;
+  overflow-x: hidden !important;
+  width: 100vw;
+  max-width: 100vw;
 }
 
 body {

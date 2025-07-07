@@ -54,6 +54,27 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ keyword }) => {
               </div>
             ))}
         </div>
+        {!isLoading && !error && visiblePokemons.length === 0 && (
+          <>
+            <div className='mb-4 w-full text-left text-lg font-semibold text-gray-900'>
+              No results found for "{keyword}"
+            </div>
+            <div className='flex w-full flex-col items-center justify-center py-20'>
+              <img
+                src='/images/pokeball.webp'
+                alt='Not Found'
+                className='mb-4 h-32 w-32'
+                draggable={false}
+              />
+              <div className='mb-1 text-xl font-bold text-gray-900'>
+                Pokémon Not Found
+              </div>
+              <div className='text-base text-gray-500'>
+                Change Your Keywords
+              </div>
+            </div>
+          </>
+        )}
         {canLoadMore && (
           <button
             className='right-0 left-0 mx-auto mt-10 h-[52px] w-[200px] rounded-full border border-gray-300 bg-white text-lg font-medium text-[#181C32] transition hover:bg-gray-100'

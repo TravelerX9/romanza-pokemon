@@ -29,7 +29,7 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ keyword }) => {
 
   return (
     <>
-      <div className='mx-auto box-border flex min-h-[530px] w-[230px] flex-col gap-2 rounded-3xl bg-white px-6 py-10 md:min-h-[1000px] md:w-[1200px]'>
+      <div className='mx-auto box-border flex min-h-[530px] w-full flex-col gap-2 rounded-3xl bg-white px-26 py-10 md:min-h-[1000px]'>
         <h2 className='font-inter mt-0 mb-8 self-start text-[22px] font-bold text-[#222] not-italic md:mt-26 md:text-[32px]'>
           <b>List Pokemon</b>
         </h2>

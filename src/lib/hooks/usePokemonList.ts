@@ -13,7 +13,7 @@ export interface PokemonListItem {
 }
 
 async function fetchPokemonList(): Promise<PokemonListItem[]> {
-  const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=25');
+  const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100');
   const data = await res.json();
   const results: PokemonListResult[] = data.results;
 

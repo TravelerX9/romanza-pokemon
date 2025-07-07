@@ -24,7 +24,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           placeholder='Search Pokemon'
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
-          className='text-1xl absolute -left-10 -md:left-70 flex-1 bg-transparent px-15 md:px-75 text-left font-normal text-gray-500 *:bg-transparent placeholder:text-gray-500 focus:outline-none'
+          className='text-1xl absolute -left-10 -md:left-70 flex-1 bg-transparent px-15 md:px-20 text-left font-normal text-gray-500 *:bg-transparent placeholder:text-gray-500 focus:outline-none'
           style={{ fontFamily: 'Poppins, sans-serif' }}
         />
         <button

@@ -24,11 +24,11 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ keyword }) => {
 
   return (
     <>
-      <div className='mx-auto box-border flex min-h-[530px] w-[230px] md:min-h-[2530px] md:w-[1200px] flex-col rounded-3xl bg-white px-6 py-10 gap-2'>
-        <h2 className='font-inter mt-0 mb-8 md:mt-26 self-start text-[22px] md:text-[32px] font-bold text-[#222] not-italic'>
+      <div className='mx-auto box-border flex min-h-[530px] w-[230px] flex-col gap-2 rounded-3xl bg-white px-6 py-10 md:min-h-[2530px] md:w-[1200px]'>
+        <h2 className='font-inter mt-0 mb-8 self-start text-[22px] font-bold text-[#222] not-italic md:mt-26 md:text-[32px]'>
           <b>List Pokemon</b>
         </h2>
-        <div className='grid w-full grid-cols-1 md:grid-cols-4 justify-items-center items-center gap-10'>
+        <div className='grid w-full grid-cols-1 items-center justify-items-center gap-10 md:grid-cols-4'>
           {isLoading && <div>Loading...</div>}
           {error && <div>Error loading list</div>}
           {filtered &&
@@ -41,7 +41,7 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ keyword }) => {
                 <PokemonCard
                   id={pokemon.id.toString()}
                   name={pokemon.name}
-                  image={pokemon.image}
+                  image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
                   types={pokemon.types}
                 />
               </div>

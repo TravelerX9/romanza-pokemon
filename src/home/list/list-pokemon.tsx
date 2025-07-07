@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PokemonCard from './card-pokemon';
 import { usePokemonList } from '../../lib/hooks/usePokemonList';
 import { useRouter } from 'next/navigation';
-import ButtonAnimation from '../animation/load-anima';
 
 interface ListPokemonProps {
   keyword: string;
@@ -77,14 +76,12 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ keyword }) => {
           </>
         )}
         {canLoadMore && (
-          <div className='mt-10 flex justify-center'>
-            <div
-              onClick={() => setRows((r) => r + 2)}
-              style={{ cursor: 'pointer' }}
-            >
-              <ButtonAnimation />
-            </div>
-          </div>
+          <button
+            className='right-0 left-0 mx-auto mt-10 h-[52px] w-[200px] rounded-full border border-gray-300 bg-white text-lg font-medium text-[#181C32] transition hover:bg-gray-100'
+            onClick={() => setRows((r) => r + 2)}
+          >
+            Load More
+          </button>
         )}
       </div>
     </>

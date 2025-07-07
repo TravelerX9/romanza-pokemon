@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
@@ -15,26 +13,23 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`mx-auto flex w-full items-center justify-center p-2 transition-colors duration-300 ${
+      className={`right-0 left-0 flex min-h-[48px] w-full items-center justify-center px-4 text-center ${
         scrolled ? 'bg-white' : 'bg-transparent'
       }`}
-      style={{ position: 'sticky', top: 0, zIndex: 50 }}
+      style={{ position: 'fixed', top: 0, zIndex: 100 }}
     >
-      <header>
-        <div className='z-10 flex items-center gap-2'>
-          {/* Pokeball PNG */}
-          <img
-            src='/images/pokemon-logo.png'
-            alt='Pokeball'
-            width={32}
-            height={32}
-            className='z-10 block h-8 w-8 md:h-10 md:w-10'
-          />
-          <span className='z-10 font-sans text-xl font-semibold text-gray-900 md:text-3xl'>
-            Pokedex
-          </span>
-        </div>
-      </header>
+      <div className='flex items-center'>
+        <img
+          src='/images/pokemon-logo.png'
+          alt='Pokeball'
+          width={32}
+          height={32}
+          className='z-10 mr-2 block h-8 w-8 md:h-10 md:w-10'
+        />
+        <span className='z-10 font-sans text-2xl font-bold text-gray-900'>
+          Pokedex
+        </span>
+      </div>
     </nav>
   );
 };

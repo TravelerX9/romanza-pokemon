@@ -15,7 +15,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   return (
     <div className='mb-8 flex w-full max-w-full justify-center'>
       <form
-        className='absolute top-[67%] right-0 left-0 mx-auto flex h-8 w-6 max-w-3xl items-center rounded-full bg-white px-35 py-0 md:top-[72%] md:h-14 md:w-16 md:px-70'
+        className='absolute top-[67%] right-0 left-0 mx-auto flex h-8 w-6 max-w-3xl items-center rounded-full bg-white px-35 md:top-[72%] md:h-14 md:w-16 md:px-70'
         autoComplete='off'
         onSubmit={handleSubmit}
       >

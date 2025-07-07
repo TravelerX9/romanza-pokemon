@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`mx-auto flex min-h-12 w-[100px] items-center justify-center p-2 transition-colors duration-300 md:w-[1440px] ${
+      className={`mx-auto flex min-h-12 w-full items-center justify-center p-2 transition-colors duration-300 md:w-[1440px] ${
         scrolled ? 'bg-white' : 'bg-transparent'
       }`}
       style={{ position: 'sticky', top: 0, zIndex: 50 }}

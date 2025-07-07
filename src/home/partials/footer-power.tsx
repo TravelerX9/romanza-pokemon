@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer: React.FC = () => (
-  <footer className='absolute right-0 bottom-0 left-0 box-border flex h-[120px] w-full items-center bg-white px-8 py-4'>
+  <footer className='absolute right-0 bottom-0 left-0 grid h-[120px] w-full items-center bg-white px-8 py-4'>
     <div className='relative left-[4%] flex items-center'>
       {/* Pokeball logo */}
       <img
